@@ -35,13 +35,7 @@ def get_files():
                      GROUP BY Most_frequent_media_type) tmp)
                      """
                      )
-  
-                #  SELECT 
-                #      COUNT(Most_frequent_media_type) AS value_occurrence 
-                #      FROM files  
-                #      GROUP BY Most_frequent_media_type 
-                #      ORDER BY value_occurrence DESC               
- 
+           
     files = [
             dict(num_file=sql.fetchone(), 
              avg= avg.fetchone(),
